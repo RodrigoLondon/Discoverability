@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        CloudKitManager.shared.requestDiscoverabilityAuthorization { (permissionStatus, error) in
+            if let error = error {
+                print("Error requesting user discoverability permissions: \(error.localizedDescription)")
+            }
+            if permissionStatus == .granted { print("User discoverability granted") }
+        }
+        
         return true
     }
 

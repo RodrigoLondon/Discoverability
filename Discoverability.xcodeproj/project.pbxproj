@@ -8,20 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		49930D2A2235730A00235825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930D292235730A00235825 /* AppDelegate.swift */; };
-		49930D2C2235730A00235825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930D2B2235730A00235825 /* ViewController.swift */; };
 		49930D2F2235730A00235825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49930D2D2235730A00235825 /* Main.storyboard */; };
 		49930D312235730B00235825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49930D302235730B00235825 /* Assets.xcassets */; };
 		49930D342235730B00235825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49930D322235730B00235825 /* LaunchScreen.storyboard */; };
+		49C52207223576050004694F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C52206223576050004694F /* User.swift */; };
+		49C52209223576630004694F /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C52208223576630004694F /* UserController.swift */; };
+		49C5220B223577320004694F /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5220A223577320004694F /* CloudKitManager.swift */; };
+		49C5220D223807490004694F /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5220C223807490004694F /* UserSearchViewController.swift */; };
+		49C5220F223807750004694F /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5220E223807750004694F /* UsersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49930D262235730A00235825 /* Discoverability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discoverability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49930D292235730A00235825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49930D2B2235730A00235825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49930D2E2235730A00235825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49930D302235730B00235825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49930D332235730B00235825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49930D352235730B00235825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49930D3B2235732300235825 /* Discoverability.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Discoverability.entitlements; sourceTree = "<group>"; };
+		49C52206223576050004694F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		49C52208223576630004694F /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		49C5220A223577320004694F /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		49C5220C223807490004694F /* UserSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		49C5220E223807750004694F /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +63,59 @@
 		49930D282235730A00235825 /* Discoverability */ = {
 			isa = PBXGroup;
 			children = (
-				49930D292235730A00235825 /* AppDelegate.swift */,
-				49930D2B2235730A00235825 /* ViewController.swift */,
-				49930D2D2235730A00235825 /* Main.storyboard */,
-				49930D302235730B00235825 /* Assets.xcassets */,
-				49930D322235730B00235825 /* LaunchScreen.storyboard */,
-				49930D352235730B00235825 /* Info.plist */,
+				49930D3B2235732300235825 /* Discoverability.entitlements */,
+				49930D3F2235737D00235825 /* Resources */,
+				49930D3C2235735900235825 /* Models */,
+				49930D3D2235736200235825 /* Controllers */,
+				49930D3E2235736B00235825 /* View Controllers */,
+				49930D40223573D900235825 /* UI */,
 			);
 			path = Discoverability;
+			sourceTree = "<group>";
+		};
+		49930D3C2235735900235825 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49C52206223576050004694F /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49930D3D2235736200235825 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49C52208223576630004694F /* UserController.swift */,
+				49C5220A223577320004694F /* CloudKitManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49930D3E2235736B00235825 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49C5220C223807490004694F /* UserSearchViewController.swift */,
+				49C5220E223807750004694F /* UsersTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		49930D3F2235737D00235825 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49930D292235730A00235825 /* AppDelegate.swift */,
+				49930D302235730B00235825 /* Assets.xcassets */,
+				49930D352235730B00235825 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49930D40223573D900235825 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				49930D2D2235730A00235825 /* Main.storyboard */,
+				49930D322235730B00235825 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +150,11 @@
 				TargetAttributes = {
 					49930D252235730A00235825 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49930D2C2235730A00235825 /* ViewController.swift in Sources */,
+				49C52209223576630004694F /* UserController.swift in Sources */,
+				49C52207223576050004694F /* User.swift in Sources */,
+				49C5220F223807750004694F /* UsersTableViewController.swift in Sources */,
+				49C5220B223577320004694F /* CloudKitManager.swift in Sources */,
 				49930D2A2235730A00235825 /* AppDelegate.swift in Sources */,
+				49C5220D223807490004694F /* UserSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Discoverability/Discoverability.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Discoverability/Info.plist;
+				DEVELOPMENT_TEAM = 294QD2DU2P;
+				INFOPLIST_FILE = "$(SRCROOT)/Discoverability/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,8 +364,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Discoverability/Discoverability.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Discoverability/Info.plist;
+				DEVELOPMENT_TEAM = 294QD2DU2P;
+				INFOPLIST_FILE = "$(SRCROOT)/Discoverability/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
